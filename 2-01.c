@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <limits.h>
-#include <string.h>
 
 /* find ranges of integer types, check against library values */
 int main()
