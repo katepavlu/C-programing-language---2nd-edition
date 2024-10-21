@@ -194,6 +194,7 @@ int getop(char s[]) {
                 ret = FUNCTION;
                 while ( islower(c = getch()) )
                         s[++i] = c;
+                s[++i] = '\0';
         }
         if( c != EOF )
                 ungetch(c);
@@ -235,5 +236,5 @@ void func(char *str) {
         else if(!strcmp(str, "&sqrt"))
                 push( sqrt( pop() ) );
         else
-                printf("error: unknown function\n");
+                printf("error: unknown function: %s\n", str);
 }
