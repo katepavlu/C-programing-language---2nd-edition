@@ -9,7 +9,7 @@ int main() {
     
     celsius = lower; 
 
-    printf(" C   F\n");
+    printf("  C   F\n");
     printf("----------\n");
     
     while (celsius <= upper) { 
@@ -18,4 +18,5 @@ int main() {
         printf("%3.0f %5.1f\n", celsius, fahr);
         celsius = celsius + step;
     } 
+    return 0;
 }
