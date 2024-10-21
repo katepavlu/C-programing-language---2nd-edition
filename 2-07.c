@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-/* return x with n bits beginning at position p inverted */
+/* return x with n bits beginning at position p inverted 
+ * if n starting at p cannot fit inside x, the behaviour is undefined */
 unsigned int invert(unsigned int x, unsigned int p, unsigned int n) {
     unsigned int mask = 0;
     
