@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdint.h>
+/* count spaces, tabs and newlines in a file */
 int main()
 {
     register char c;
