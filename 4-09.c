@@ -3,7 +3,6 @@
 
 extern int bufp; //buffer pointer - next free position 
 
-void ungets(char*);
 int getch(void);
 
 int main() {   
