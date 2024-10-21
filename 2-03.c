@@ -35,7 +35,7 @@ int htoi(char* s)
 
 int main()
 {
-    char str[] = "  0xdeadbeef"; 
+    char str[] = "0xdeadbeef"; 
     printf("\tstring: %s\n\tint:    0x%x", str, htoi(str));
 
     return 0;
