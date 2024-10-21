@@ -7,8 +7,8 @@
 #define MAXOP 100 //max size of operand or operator
 #define NUMBER '0' //signal that a number was found
 #define FUNCTION '&' //function found
-#define VAR 'A'
-#define SAVE '>'
+#define VAR 'A' //variable found
+#define SAVE '>' //save to variable
 
 int getop(char[]);
 void push(double);
@@ -130,6 +130,7 @@ void push(double f) {
                 printf("error: stack full, can't push %g\n", f);
 }
 
+/* empty the stack */
 void mt(void) {
         sp = 0;
 }
@@ -216,7 +217,8 @@ void ungetch(int c) {
         else
                 buf[bufp++] = c;
 }
-#include <math.h>
+
+/* execute math function indicated by string in str */
 void func(char *str) {
         if(!strcmp(str, "&cos"))
                 push( cos( pop() ) );
