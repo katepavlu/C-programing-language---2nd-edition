@@ -4,8 +4,7 @@
 /* truncate whitespace to first character in continuous block */
 int main()    
 {    
-    register char c;    
-    size_t cnt = 0;    
+    register char c;      
     
     while( (c = getc(stdin) ) != EOF )    
     {    
@@ -19,8 +18,5 @@ int main()
              
         putchar(c);                                                                                                                                                                                                                           
     }    
-        
-        
-    printf("%ld\n", cnt);    
     return(0);    
 } 
